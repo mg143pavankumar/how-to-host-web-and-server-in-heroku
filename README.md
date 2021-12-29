@@ -22,6 +22,14 @@
   });
 }
 ```
++ And remove following home page router `/` of server so that client home can render
+```
+router.get("/", (req, res) => {
+  res.send("Hello world from the home..router js!!");
+});
+
+```
+
 
 ## step-4:
 + Replace the following code in the `package.json` of server folder in the `scripts` by
